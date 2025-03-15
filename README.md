@@ -23,6 +23,8 @@ Supplementary material
 Additional code
 
 * plottimeseries.R
+* bifurcation.R
+* basic_ricker_fit.R (suitable for introductory ecology labs)
 
 Directories
 
