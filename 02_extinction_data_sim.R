@@ -10,15 +10,15 @@
 # 2) Equal total variance of kE and kD (kE adjusted each time to a/c for alpha)
 # To do the standardizations, set their flags to TRUE.
 
-source("source/Ricker.r")             #Deterministic Ricker
-source("source/RickerStBS.r")         #Stochastic birth and survival
-source("source/RickerStBS_DhB.r")     #Stochastic b, s, plus dem het in b.
-source("source/RickerStBS_EhB.r")     #Stochastic b, s, plus env het in b.
-source("source/RickerStBS_DEhB.r")    #Stochastic b, s, plus env & dem het in b.
-source("source/RickerStSexBS.r")      #Stochastic sex ratio, birth, survival
-source("source/RickerStSexBS_DhB.r")  #St sr, b, s, plus dem het in b.
-source("source/RickerStSexBS_EhB.r")  #St sr, b, s, plus env het in b.
-source("source/RickerStSexBS_DEhB.r") #St sr, b, s, plus env & dem het in b.
+source("source/Ricker.R")             #Deterministic Ricker
+source("source/RickerStBS.R")         #Stochastic birth and survival
+source("source/RickerStBS_DhB.R")     #Stochastic b, s, plus dem het in b.
+source("source/RickerStBS_EhB.R")     #Stochastic b, s, plus env het in b.
+source("source/RickerStBS_DEhB.R")    #Stochastic b, s, plus env & dem het in b.
+source("source/RickerStSexBS.R")      #Stochastic sex ratio, birth, survival
+source("source/RickerStSexBS_DhB.R")  #St sr, b, s, plus dem het in b.
+source("source/RickerStSexBS_EhB.R")  #St sr, b, s, plus env het in b.
+source("source/RickerStSexBS_DEhB.R") #St sr, b, s, plus env & dem het in b.
 
 alpha <- 0.05
 Rseq <- c(1.05,1.1,seq(1.2,20,by=0.2)) #R sequence for sims

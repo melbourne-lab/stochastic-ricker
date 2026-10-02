@@ -7,16 +7,16 @@
 # Simulate the and plot the production function for the family of stochastic
 # Ricker models
 
-source("source/Ricker.r")             #Deterministic Ricker
-source("source/RickerStBS.r")         #Stochastic birth and survival
-source("source/RickerStBS_DhB.r")     #Stochastic b, s, + dem het in b.
-source("source/RickerStBS_EhB.r")     #Stochastic b, s, + env het in b.
-source("source/RickerStBS_DEhB.r")    #Stochastic b, s, + dem & env het in b.
-source("source/RickerStSexBS.r")      #Stochastic sex ratio, birth, survival
-source("source/RickerStSexBS_DhB.r")  #St sr, b, s, + dem het in b.
-source("source/RickerStSexBS_EhB.r")  #St sr, b, s, + env het in b.
-source("source/RickerStSexBS_DEhB.r") #St sr, b, s, + dem & env het in b.
-source("source/Ricker_var.r")         #Variances of stochastic Ricker models
+source("source/Ricker.R")             #Deterministic Ricker
+source("source/RickerStBS.R")         #Stochastic birth and survival
+source("source/RickerStBS_DhB.R")     #Stochastic b, s, + dem het in b.
+source("source/RickerStBS_EhB.R")     #Stochastic b, s, + env het in b.
+source("source/RickerStBS_DEhB.R")    #Stochastic b, s, + dem & env het in b.
+source("source/RickerStSexBS.R")      #Stochastic sex ratio, birth, survival
+source("source/RickerStSexBS_DhB.R")  #St sr, b, s, + dem het in b.
+source("source/RickerStSexBS_EhB.R")  #St sr, b, s, + env het in b.
+source("source/RickerStSexBS_DEhB.R") #St sr, b, s, + dem & env het in b.
+source("source/Ricker_var.R")         #Variances of stochastic Ricker models
 
 # Parameters for simulating data
 R <- 5
@@ -27,8 +27,9 @@ Nt <- c(2,6,12,seq(20,160,by=10))
 reps <- 100
 
 # Plot setup
-windows(width=7,height=7*2/4)
+windows(width=7,height=7/2) #Mac: quartz(), Linux: X11(), File: png()
 par(mfrow=c(2,4),mar=c(0,0,0,0),oma=c(4,5,1,1))
+
 xlim <- c(0,160) #x-axis limits
 ylim <- c(0,100)
 xtks <- seq(from = 0 , to = 160 , by = 50 ) #x ticks

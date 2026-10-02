@@ -10,8 +10,8 @@
 # the true model and add error. Assume the error is lognormal but rounded to
 # integer values.
 
-source("source/RickerStSexBS_DEhB.r")
-source("source/Ricker_nll.r")      #Likelihood functions
+source("source/RickerStSexBS_DEhB.R")
+source("source/Ricker_nll.R")      #Likelihood functions
 library(stats4) #For mle
 
 mydata <- read.csv("data/ricker_data.csv")

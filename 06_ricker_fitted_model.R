@@ -4,9 +4,9 @@
 #
 # Supplementary Fig. 2
 
-source("source/Ricker.r")
-source("source/Ricker_nll.r")
-source("source/Ricker_var.r") #Variances of stochastic Ricker models
+source("source/Ricker.R")
+source("source/Ricker_nll.R")
+source("source/Ricker_var.R") #Variances of stochastic Ricker models
 library(stats4) #mle
 
 tribdata <- read.csv("data/ricker_data.csv")

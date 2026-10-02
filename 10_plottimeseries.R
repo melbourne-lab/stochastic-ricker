@@ -4,15 +4,15 @@
 
 # Simulate time series of different stochastic Ricker models
 
-source("source/Ricker.r")             #Deterministic Ricker
-source("source/RickerStBS.r")         #Stochastic birth and survival
-source("source/RickerStBS_DhB.r")     #Stochastic b, s, + dem het in b.
-source("source/RickerStBS_EhB.r")     #Stochastic b, s, + env het in b.
-source("source/RickerStBS_DEhB.r")    #Stochastic b, s, + dem & env het in b.
-source("source/RickerStSexBS.r")      #Stochastic sex ratio, birth, survival
-source("source/RickerStSexBS_DhB.r")  #St sr, b, s, + dem het in b.
-source("source/RickerStSexBS_EhB.r")  #St sr, b, s, + env het in b.
-source("source/RickerStSexBS_DEhB.r") #St sr, b, s, + dem & env het in b.
+source("source/Ricker.R")             #Deterministic Ricker
+source("source/RickerStBS.R")         #Stochastic birth and survival
+source("source/RickerStBS_DhB.R")     #Stochastic b, s, + dem het in b.
+source("source/RickerStBS_EhB.R")     #Stochastic b, s, + env het in b.
+source("source/RickerStBS_DEhB.R")    #Stochastic b, s, + dem & env het in b.
+source("source/RickerStSexBS.R")      #Stochastic sex ratio, birth, survival
+source("source/RickerStSexBS_DhB.R")  #St sr, b, s, + dem het in b.
+source("source/RickerStSexBS_EhB.R")  #St sr, b, s, + env het in b.
+source("source/RickerStSexBS_DEhB.R") #St sr, b, s, + dem & env het in b.
 
 #Simulate one time series
 R <- 2.6
